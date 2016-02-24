@@ -22,6 +22,7 @@
 		578A1CE51C48FA1A0030F8BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578A1CE31C48FA1A0030F8BF /* LaunchScreen.storyboard */; };
 		578A1CF01C48FA1A0030F8BF /* YTRefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578A1CEF1C48FA1A0030F8BF /* YTRefreshTests.m */; };
 		578A1CFB1C48FA1A0030F8BF /* YTRefreshUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578A1CFA1C48FA1A0030F8BF /* YTRefreshUITests.m */; };
+		57BC9A611C7D4FDD0005BD11 /* RefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BC9A601C7D4FDD0005BD11 /* RefreshAutoStateFooter.m */; };
 		57F85BED1C7C44CD0066F383 /* RefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F85BEC1C7C44CD0066F383 /* RefreshAutoFooter.m */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,8 @@
 		578A1CF61C48FA1A0030F8BF /* YTRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		578A1CFA1C48FA1A0030F8BF /* YTRefreshUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTRefreshUITests.m; sourceTree = "<group>"; };
 		578A1CFC1C48FA1A0030F8BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57BC9A5F1C7D4FDD0005BD11 /* RefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		57BC9A601C7D4FDD0005BD11 /* RefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshAutoStateFooter.m; sourceTree = "<group>"; };
 		57F85BEB1C7C44CD0066F383 /* RefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshAutoFooter.h; sourceTree = "<group>"; };
 		57F85BEC1C7C44CD0066F383 /* RefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshAutoFooter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +137,8 @@
 		5744DF431C745E23009B9E1E /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				57BC9A5D1C7D4FCC0005BD11 /* Footer */,
+				57BC9A5E1C7D4FCC0005BD11 /* Header */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -212,6 +217,22 @@
 				578A1CFC1C48FA1A0030F8BF /* Info.plist */,
 			);
 			path = YTRefreshUITests;
+			sourceTree = "<group>";
+		};
+		57BC9A5D1C7D4FCC0005BD11 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				57BC9A5F1C7D4FDD0005BD11 /* RefreshAutoStateFooter.h */,
+				57BC9A601C7D4FDD0005BD11 /* RefreshAutoStateFooter.m */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		57BC9A5E1C7D4FCC0005BD11 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +371,7 @@
 				57F85BED1C7C44CD0066F383 /* RefreshAutoFooter.m in Sources */,
 				5744DF5B1C759BC1009B9E1E /* RefreshFooter.m in Sources */,
 				5744DF4E1C7465E0009B9E1E /* RefreshComponent.m in Sources */,
+				57BC9A611C7D4FDD0005BD11 /* RefreshAutoStateFooter.m in Sources */,
 				5744DF571C74899A009B9E1E /* RefreshConst.m in Sources */,
 				578A1CDD1C48FA1A0030F8BF /* ViewController.m in Sources */,
 				5744DF5F1C75A2AE009B9E1E /* UIScrollView+Refresh.m in Sources */,

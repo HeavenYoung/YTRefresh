@@ -99,6 +99,8 @@
 }
 
 - (void)setState:(RefreshState)state {
+    
+    // 检查状态
     RefreshCheckState
     
     if (state == RefreshStateRefreshing) {
