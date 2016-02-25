@@ -10,9 +10,11 @@
 #import "RefreshConst.h"
 
 @class RefreshFooter;
-
+@class RefreshHeader;
 @interface UIScrollView (Refresh)
 
+/** 下拉控件 */
+@property (nonatomic, strong) RefreshHeader *header;
 /** 上拉刷新控件 */
 @property (nonatomic, strong) RefreshFooter *footer;
 

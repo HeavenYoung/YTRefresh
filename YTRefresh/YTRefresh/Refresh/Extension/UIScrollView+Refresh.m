@@ -8,6 +8,7 @@
 
 #import "UIScrollView+Refresh.h"
 #import <objc/runtime.h>
+#import "RefreshHeader.h"
 #import "RefreshFooter.h"
 
 @implementation NSObject (Refresh)
@@ -23,6 +24,26 @@
 @end
 
 @implementation UIScrollView (Refresh)
+#pragma mark - header
+static const char RefreshHeaderKey = '\0';
+- (void)setHeader:(RefreshHeader *)header {
+    if (header != self.header) {
+        // 删除旧的，添加新的
+        [self.header removeFromSuperview];
+        [self insertSubview:header atIndex:0];
+        
+        // 存储新的
+        // 存储新的
+        [self willChangeValueForKey:@"yt_header"]; // KVO
+        objc_setAssociatedObject(self, &RefreshHeaderKey,
+                                 header, OBJC_ASSOCIATION_ASSIGN);
+        [self didChangeValueForKey:@"yt_header"]; // KVO
+    }
+}
+
+- (RefreshHeader *)header {
+    return objc_getAssociatedObject(self, &RefreshHeaderKey);
+}
 
 #pragma mark - footer
 static const char RefreshFooterKey = '\0';
