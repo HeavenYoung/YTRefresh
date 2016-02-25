@@ -35,8 +35,8 @@
 - (void)prepare {
     [super prepare];
     
-    // 默认为白色风格
-    self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
+    // 默认为灰色风格
+    self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
 }
 
 - (void)placeSubviews {
