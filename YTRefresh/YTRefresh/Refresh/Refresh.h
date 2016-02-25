@@ -12,4 +12,8 @@
 
 #endif /* Refresh_h */
 
-#import ""
+#import "UIScrollView+Refresh.h"
+#import "UIScrollView+YTExtension.h"
+#import "UIView+YTExtension.h"
+
+#import "RefreshAutoNormalFooter.h"

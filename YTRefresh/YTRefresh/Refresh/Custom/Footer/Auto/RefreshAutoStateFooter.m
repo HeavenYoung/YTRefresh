@@ -18,7 +18,7 @@
 @implementation RefreshAutoStateFooter
 #pragma mark - 懒加载
 - (NSMutableDictionary *)stateTitles {
-    if (_stateTitles == nil) {
+    if (!_stateTitles) {
         _stateTitles = [NSMutableDictionary dictionary];
     }
     return _stateTitles;

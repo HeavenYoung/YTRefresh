@@ -25,13 +25,6 @@
     return self;
 }
 
-- (void)drawRect:(CGRect)rect {
-    [super drawRect:rect];
-    if (self.state == RefreshStateWillRefresh) {
-        self.state = RefreshStateRefreshing;
-    }
-}
-
 - (void)prepare {
 
     // 基本属性
@@ -50,11 +43,13 @@
 
     [super willMoveToSuperview:newSuperview];
     
+    // 如果不是UIScrollView, return
+    if (newSuperview && ![newSuperview isKindOfClass:[UIScrollView class]]) return;
+    
     // 旧的父控件移除监听
     [self removeObservers];
     
-    // 如果不是UIScrollView, return
-    if (newSuperview && ![newSuperview isKindOfClass:[UIScrollView class]]) {
+    if (newSuperview) { // 新的父控件
         // 设置宽度
         self.width = newSuperview.width;
         // 设置位置
@@ -68,7 +63,13 @@
         
         // 添加监听
         [self addObservers];
-        
+    }
+}
+
+- (void)drawRect:(CGRect)rect {
+    [super drawRect:rect];
+    if (self.state == RefreshStateWillRefresh) {
+        self.state = RefreshStateRefreshing;
     }
 }
 
