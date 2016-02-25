@@ -17,3 +17,4 @@
 #import "UIView+YTExtension.h"
 
 #import "RefreshAutoNormalFooter.h"
+#import "RefreshStateNormalHeader.h"
