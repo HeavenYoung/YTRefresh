@@ -51,7 +51,7 @@ UIKIT_EXTERN NSString *const RefreshKeyPathContentSize;
 UIKIT_EXTERN NSString *const RefreshKeyPathContentInset;
 UIKIT_EXTERN NSString *const RefreshKeyPathPanState;
 
-UIKIT_EXTERN NSString *const RefreshHeaderLastUpdateTimeKey;
+UIKIT_EXTERN NSString *const RefreshHeaderLastUpdatedTimeKey;
 
 UIKIT_EXTERN NSString *const RefreshHeaderIdleText;
 UIKIT_EXTERN NSString *const RefreshHeaderPullingText;

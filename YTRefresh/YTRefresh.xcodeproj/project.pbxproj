@@ -14,6 +14,9 @@
 		5744DF571C74899A009B9E1E /* RefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5744DF561C74899A009B9E1E /* RefreshConst.m */; };
 		5744DF5B1C759BC1009B9E1E /* RefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5744DF5A1C759BC1009B9E1E /* RefreshFooter.m */; };
 		5744DF5F1C75A2AE009B9E1E /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 5744DF5E1C75A2AE009B9E1E /* UIScrollView+Refresh.m */; };
+		577CF22F1C7EF46200CFF20D /* RefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 577CF22E1C7EF46200CFF20D /* RefreshStateHeader.m */; };
+		577CF2321C7F006900CFF20D /* RefreshStateNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 577CF2311C7F006900CFF20D /* RefreshStateNormalHeader.m */; };
+		577CF2341C7F06D100CFF20D /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 577CF2331C7F06D100CFF20D /* arrow@2x.png */; };
 		578A1CD71C48FA1A0030F8BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578A1CD61C48FA1A0030F8BF /* main.m */; };
 		578A1CDA1C48FA1A0030F8BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 578A1CD91C48FA1A0030F8BF /* AppDelegate.m */; };
 		578A1CDD1C48FA1A0030F8BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578A1CDC1C48FA1A0030F8BF /* ViewController.m */; };
@@ -60,6 +63,11 @@
 		5744DF5A1C759BC1009B9E1E /* RefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshFooter.m; sourceTree = "<group>"; };
 		5744DF5D1C75A2AE009B9E1E /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		5744DF5E1C75A2AE009B9E1E /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		577CF22D1C7EF46200CFF20D /* RefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshStateHeader.h; sourceTree = "<group>"; };
+		577CF22E1C7EF46200CFF20D /* RefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshStateHeader.m; sourceTree = "<group>"; };
+		577CF2301C7F006900CFF20D /* RefreshStateNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshStateNormalHeader.h; sourceTree = "<group>"; };
+		577CF2311C7F006900CFF20D /* RefreshStateNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshStateNormalHeader.m; sourceTree = "<group>"; };
+		577CF2331C7F06D100CFF20D /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow@2x.png"; path = "Extension/arrow@2x.png"; sourceTree = "<group>"; };
 		578A1CD21C48FA1A0030F8BF /* YTRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578A1CD61C48FA1A0030F8BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		578A1CD81C48FA1A0030F8BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 				5744DF431C745E23009B9E1E /* Custom */,
 				5744DF441C745E23009B9E1E /* Extension */,
 				5744DF4B1C746567009B9E1E /* Refresh.h */,
+				577CF2331C7F06D100CFF20D /* arrow@2x.png */,
 				5744DF551C74899A009B9E1E /* RefreshConst.h */,
 				5744DF561C74899A009B9E1E /* RefreshConst.m */,
 			);
@@ -226,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				57BC9A621C7D5F010005BD11 /* Auto */,
-				57BC9A631C7D5F010005BD11 /* SemiAuto */,
 			);
 			path = Footer;
 			sourceTree = "<group>";
@@ -234,6 +242,10 @@
 		57BC9A5E1C7D4FCC0005BD11 /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				577CF22D1C7EF46200CFF20D /* RefreshStateHeader.h */,
+				577CF22E1C7EF46200CFF20D /* RefreshStateHeader.m */,
+				577CF2301C7F006900CFF20D /* RefreshStateNormalHeader.h */,
+				577CF2311C7F006900CFF20D /* RefreshStateNormalHeader.m */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -247,13 +259,6 @@
 				57BC9A681C7D794C0005BD11 /* RefreshAutoStateNormalFooter.m */,
 			);
 			path = Auto;
-			sourceTree = "<group>";
-		};
-		57BC9A631C7D5F010005BD11 /* SemiAuto */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SemiAuto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577CF2341C7F06D100CFF20D /* arrow@2x.png in Resources */,
 				578A1CE51C48FA1A0030F8BF /* LaunchScreen.storyboard in Resources */,
 				578A1CE21C48FA1A0030F8BF /* Assets.xcassets in Resources */,
 				578A1CE01C48FA1A0030F8BF /* Main.storyboard in Resources */,
@@ -389,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577CF22F1C7EF46200CFF20D /* RefreshStateHeader.m in Sources */,
 				57F85BED1C7C44CD0066F383 /* RefreshAutoFooter.m in Sources */,
 				57BC9A691C7D794C0005BD11 /* RefreshAutoStateNormalFooter.m in Sources */,
 				5744DF5B1C759BC1009B9E1E /* RefreshFooter.m in Sources */,
@@ -401,6 +408,7 @@
 				578A1CD71C48FA1A0030F8BF /* main.m in Sources */,
 				5744DF541C746817009B9E1E /* UIScrollView+YTExtension.m in Sources */,
 				573079151C7C0834003FD204 /* RefreshHeader.m in Sources */,
+				577CF2321C7F006900CFF20D /* RefreshStateNormalHeader.m in Sources */,
 				5744DF511C7467C9009B9E1E /* UIView+YTExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

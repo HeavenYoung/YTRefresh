@@ -31,7 +31,7 @@
     [super prepare];
     
     // 设置key
-    self.lastUpdateTimeKey = RefreshHeaderLastUpdateTimeKey;
+    self.lastUpdatedTimeKey = RefreshHeaderLastUpdatedTimeKey;
     
     // 设置高度
     self.height = RefreshHeaderHeight;
@@ -101,7 +101,7 @@
         if (oldState != RefreshStateRefreshing) return;
         
         // 保存刷新时间
-        [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:self.lastUpdateTimeKey];
+        [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:self.lastUpdatedTimeKey];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
         // 恢复inset和offset
@@ -144,7 +144,7 @@
 }
 
 - (NSDate *)lastUpdateTime {
-    return [[NSUserDefaults standardUserDefaults] objectForKey:self.lastUpdateTimeKey];
+    return [[NSUserDefaults standardUserDefaults] objectForKey:self.lastUpdatedTimeKey];
 }
 
 @end

@@ -18,7 +18,7 @@ NSString *const RefreshKeyPathContentInset = @"contentInset";
 NSString *const RefreshKeyPathContentSize = @"contentSize";
 NSString *const RefreshKeyPathPanState = @"state";
 
-NSString *const RefreshHeaderLastUpdateTimeKey = @"RefreshHeaderLastUpdatedTimeKey";
+NSString *const RefreshHeaderLastUpdatedTimeKey = @"RefreshHeaderLastUpdatedTimeKey";
 
 NSString *const RefreshHeaderIdleText = @"下拉可以刷新";
 NSString *const RefreshHeaderPullingText = @"松开立即刷新";
