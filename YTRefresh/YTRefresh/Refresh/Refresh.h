@@ -16,5 +16,5 @@
 #import "UIScrollView+YTExtension.h"
 #import "UIView+YTExtension.h"
 
-#import "RefreshAutoNormalFooter.h"
+#import "RefreshAutoStateNormalFooter.h"
 #import "RefreshStateNormalHeader.h"
