@@ -34,7 +34,6 @@
 }
 
 - (void)setActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)activityIndicatorViewStyle {
-    
     _activityIndicatorViewStyle = activityIndicatorViewStyle;
     self.activityIndicatorView = nil;
     [self setNeedsLayout];

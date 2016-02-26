@@ -33,7 +33,6 @@ static const char RefreshHeaderKey = '\0';
         [self insertSubview:header atIndex:0];
         
         // 存储新的
-        // 存储新的
         [self willChangeValueForKey:@"yt_header"]; // KVO
         objc_setAssociatedObject(self, &RefreshHeaderKey,
                                  header, OBJC_ASSOCIATION_ASSIGN);

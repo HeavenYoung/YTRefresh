@@ -11,7 +11,7 @@
 @interface RefreshStateHeader : RefreshHeader
 #pragma mark - 刷新时间相关
 /** 控制更新时间的文字 */
-@property (nonatomic, copy) NSString *(^lastUpdateTimeText)(NSDate *lasUpdateTime);
+@property (nonatomic, copy) NSString *(^lastUpdatedTimeText)(NSDate *lasUpdatedTime);
 /** 显示上次刷新时间的label */
 @property (nonatomic, weak) UILabel *lastUpdatedTimeLabel;
 

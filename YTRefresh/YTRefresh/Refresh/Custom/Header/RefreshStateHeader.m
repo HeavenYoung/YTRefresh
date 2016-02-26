@@ -31,32 +31,32 @@
     return [NSCalendar currentCalendar];
 }
 
-- (void)setLastUpdateTimeKey:(NSString *)lastUpdateTimeKey {
-    [super setLastUpdatedTimeKey:lastUpdateTimeKey];
+- (void)setLastUpdatedTimeKey:(NSString *)lastUpdatedTimeKey {
+    [super setLastUpdatedTimeKey:lastUpdatedTimeKey];
     
     // 如果lastUpdateTimeLabel隐藏，直接返回
-    if (self.lastUpdateTimeLabel.hidden == YES) return;
+    if (self.lastUpdatedTimeLabel.hidden == YES) return;
     
-    NSDate *lastUpdatedTime = [[NSUserDefaults standardUserDefaults] objectForKey:lastUpdateTimeKey];
+    NSDate *lastUpdatedTime = [[NSUserDefaults standardUserDefaults] objectForKey:lastUpdatedTimeKey];
     
     // 如果有block
-    if (self.lastUpdateTimeText) {
-        self.lastUpdateTimeLabel.text = self.lastUpdateTimeText(lastUpdatedTime);
+    if (self.lastUpdatedTimeText) {
+        self.lastUpdatedTimeLabel.text = self.lastUpdatedTimeText(lastUpdatedTime);
         return;
     }
-
+    
     if (lastUpdatedTime) {
         // 1.获得年月日
         NSCalendar *calendar = [self currentCalendar];
         NSUInteger unitFlags = NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay |NSCalendarUnitHour |NSCalendarUnitMinute;
-        NSDateComponents *cmp1 = [calendar components:unitFlags fromDate:lastUpdatedTime];
-        NSDateComponents *cmp2 = [calendar components:unitFlags fromDate:[NSDate date]];
+        NSDateComponents *component1 = [calendar components:unitFlags fromDate:lastUpdatedTime];
+        NSDateComponents *component2 = [calendar components:unitFlags fromDate:[NSDate date]];
         
         // 2.格式化日期
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        if ([cmp1 day] == [cmp2 day]) { // 今天
+        if ([component1 day] == [component2 day]) { // 今天
             formatter.dateFormat = @"今天 HH:mm";
-        } else if ([cmp1 year] == [cmp2 year]) { // 今年
+        } else if ([component1 year] == [component2 year]) { // 今年
             formatter.dateFormat = @"MM-dd HH:mm";
         } else {
             formatter.dateFormat = @"yyyy-MM-dd HH:mm";
@@ -64,9 +64,9 @@
         NSString *time = [formatter stringFromDate:lastUpdatedTime];
         
         // 3.显示日期
-        self.lastUpdateTimeLabel.text = [NSString stringWithFormat:@"最后更新：%@", time];
+        self.lastUpdatedTimeLabel.text = [NSString stringWithFormat:@"最后更新：%@", time];
     } else {
-        self.lastUpdateTimeLabel.text = @"最后更新：无记录";
+        self.lastUpdatedTimeLabel.text = @"最后更新：无记录";
     }
 }
 
@@ -136,7 +136,8 @@
     return _stateLabel;
 }
 
-- (UILabel *)lastUpdateTimeLabel {
+- (UILabel *)lastUpdatedTimeLabel {
+
     if (_lastUpdatedTimeLabel == nil) {
         [self addSubview:_lastUpdatedTimeLabel = [UILabel label]];
     }

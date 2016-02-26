@@ -49,7 +49,7 @@
     // 如果正在刷新
     if (self.state == RefreshStateRefreshing) {
         
-        if (!self.window) return;
+        if (self.window == nil) return;
         CGFloat insetTop = - self.scrollView.contentOffsetY > _scrollViewOriginalInset.top ? - self.scrollView.contentOffsetY : _scrollViewOriginalInset.top;
         
         insetTop = insetTop > self.height + _scrollViewOriginalInset.top ? self.height + _scrollViewOriginalInset.top : insetTop;
@@ -68,7 +68,6 @@
     CGFloat happenOffsetY = - self.scrollViewOriginalInset.top;
     
     // 如果是向上滚动到看不见头部控件，直接返回
-    // >= -> >
     if (offsetY > happenOffsetY) return;
     
     // 普通 和 即将刷新 的临界点
@@ -143,7 +142,7 @@
     }
 }
 
-- (NSDate *)lastUpdateTime {
+- (NSDate *)lastUpdatedTime {
     return [[NSUserDefaults standardUserDefaults] objectForKey:self.lastUpdatedTimeKey];
 }
 
