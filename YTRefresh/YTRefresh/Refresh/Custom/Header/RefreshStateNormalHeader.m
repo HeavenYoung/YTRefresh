@@ -73,7 +73,7 @@
 
     RefreshCheckState;
 
-    // 根据状态做事情
+    // 根据不同的状态执行不同操作
     if (state == RefreshStateIdle) {
         if (oldState == RefreshStateRefreshing) {
             self.arrowView.transform = CGAffineTransformIdentity;
@@ -81,7 +81,7 @@
             [UIView animateWithDuration:RefreshSlowAnimationDuration animations:^{
                 self.activityIndicatorView.alpha = 0.0;
             } completion:^(BOOL finished) {
-                // 如果执行完动画发现不是idle状态，就直接返回，进入其他状态
+                // 如果执行完动画发现不是默认状态，就直接返回，进入其他状态
                 if (self.state != RefreshStateIdle) return;
                 
                 self.activityIndicatorView.alpha = 1.0;
