@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571483491C842EB30045A1B1 /* RefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 571483481C842EB30045A1B1 /* RefreshGifHeader.m */; };
 		573079151C7C0834003FD204 /* RefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 573079141C7C0834003FD204 /* RefreshHeader.m */; };
 		5744DF4E1C7465E0009B9E1E /* RefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5744DF4D1C7465E0009B9E1E /* RefreshComponent.m */; };
 		5744DF511C7467C9009B9E1E /* UIView+YTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5744DF501C7467C9009B9E1E /* UIView+YTExtension.m */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		571483471C842EB30045A1B1 /* RefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshGifHeader.h; sourceTree = "<group>"; };
+		571483481C842EB30045A1B1 /* RefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshGifHeader.m; sourceTree = "<group>"; };
 		573079131C7C0834003FD204 /* RefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshHeader.h; sourceTree = "<group>"; };
 		573079141C7C0834003FD204 /* RefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshHeader.m; sourceTree = "<group>"; };
 		5744DF4B1C746567009B9E1E /* Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Refresh.h; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 				577CF22E1C7EF46200CFF20D /* RefreshStateHeader.m */,
 				577CF2301C7F006900CFF20D /* RefreshStateNormalHeader.h */,
 				577CF2311C7F006900CFF20D /* RefreshStateNormalHeader.m */,
+				571483471C842EB30045A1B1 /* RefreshGifHeader.h */,
+				571483481C842EB30045A1B1 /* RefreshGifHeader.m */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				5744DF5F1C75A2AE009B9E1E /* UIScrollView+Refresh.m in Sources */,
 				578A1CDA1C48FA1A0030F8BF /* AppDelegate.m in Sources */,
 				578A1CD71C48FA1A0030F8BF /* main.m in Sources */,
+				571483491C842EB30045A1B1 /* RefreshGifHeader.m in Sources */,
 				5744DF541C746817009B9E1E /* UIScrollView+YTExtension.m in Sources */,
 				573079151C7C0834003FD204 /* RefreshHeader.m in Sources */,
 				577CF2321C7F006900CFF20D /* RefreshStateNormalHeader.m in Sources */,
