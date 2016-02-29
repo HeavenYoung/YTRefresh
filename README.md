@@ -13,7 +13,7 @@ Please import the HeadFile firstly
 ## RefreshHeader
 #### Use Block 
 ``` objective-c
-self.tableView.header = [RefreshStateNormalHeader headerWithRefreshingBlock:^{
+    self.tableView.header = [RefreshStateNormalHeader headerWithRefreshingBlock:^{
       do something ...
     }];
 ```
@@ -47,7 +47,7 @@ if you want to do some configuration for the heard
 ``` objective-c
      RefreshAutoStateNormalFooter *footer = [RefreshAutoStateNormalFooter footerWithRefreshingBlock:^{
      do something ...
-}];
+     }];
 
     
     configure the footer ...
