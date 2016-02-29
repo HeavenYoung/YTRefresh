@@ -11,7 +11,7 @@ Please import the HeadFile firstly
 ```
 
 ## RefreshHeader
-### Use Block 
+#### Use Block 
 ``` objective-c
 self.tableView.header = [RefreshStateNormalHeader headerWithRefreshingBlock:^{
       do something ...
@@ -28,7 +28,7 @@ if you want to do some configuration for the heard
     self.tableView.header = header;
 ```
 
-### Use SEL
+#### Use SEL
 ``` objective-c
     RefreshStateNormalHeader *header = [RefreshStateNormalHeader headerWithRefreshingTarget:<#(id)#> refreshingAction:<#(SEL)#>]
     
@@ -37,6 +37,7 @@ if you want to do some configuration for the heard
     self.tableView.header = header;
 ```
 ## RefreshFooter 
+#### Use Block 
 ``` objective-c
     self.tableView.footer = [RefreshAutoStateNormalFooter footerWithRefreshingBlock:^{
       do something ...
@@ -54,7 +55,7 @@ if you want to do some configuration for the heard
     self.tableView.footer = footer;
 ```
 
-### Use SEL
+#### Use SEL
 ``` objective-c
     RefreshAutoStateNormalFooter *footer = [RefreshAutoStateNormalFooter footerWithRefreshingTarget:<#(id)#> refreshingAction:<#(SEL)#>]
     
