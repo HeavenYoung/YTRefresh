@@ -15,13 +15,13 @@
 @implementation RefreshHeader
 #pragma mark - 构造方法
 + (instancetype)headerWithRefreshingBlock:(RefreshComponentRefreshingBlock)refreshingBlock {
-    RefreshHeader *header = [[RefreshHeader alloc] init];
+    RefreshHeader *header = [[self alloc] init];
     header.refreshingBlock = refreshingBlock;
     return header;
 }
 
 + (instancetype)headerWithRefreshingTarget:(id)target refreshingAction:(SEL)action {
-    RefreshHeader *header = [[RefreshHeader alloc] init];
+    RefreshHeader *header = [[self alloc] init];
     [header setRefreshingTarget:target refreshingAction:action];
     return header;
 }

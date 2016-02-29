@@ -17,7 +17,7 @@
 }
 
 + (instancetype)footerWithRefreshingTarget:(id)target refreshingAction:(SEL)action {
-    RefreshFooter *footer = [[RefreshFooter alloc] init];
+    RefreshFooter *footer = [[self alloc] init];
     [footer setRefreshingTarget:target refreshingAction:action];
     return footer;
 }
